@@ -1,3 +1,100 @@
+@import 'variables';
+@import 'mixins';
+
 body {
+  .wrapper {
+  }
+  .header {
+    width: 100%;
+    font-family: $f-header;
+    font-weight: $f-w-black;
+    &__logo {
+      font-size: 34px;
+      padding: $l-padding 0;
+      width: 25%;
+      display: inline-block;
+      &__title {
+        text-align: right;
+        &__dot {
+          color: $c-main;
+        }
+      }
+      &__subtitle {
+        color: $c-main;
+        text-align: right;
+        font-size: 26px;
+      }
+    }
+    &__menu-trigger {
+      padding: $l-padding 0;
+      width: 74%;
+      display: inline-block;
+      text-align: right;
+      vertical-align: top;
+      &::before {
+        content: '\f0c9';
+      }
+    }
+  }
+  .subheader-bar {
+    background-color: $c-black;
+    color: $c-white;
+    font-size: 18px;
+    padding: $l-padding/2 0;
+    &__email{
+      color: $c-white;
+    }
+    &__email,
+    &__icon {
+      display: inline-block;
+      margin-right: 6px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__icon {
+      font-size: 30px;
+    }
+    .wrapper {
+      text-align: right;
+    }
+  }
+  .slider {
+    font-family: $f-header;
+    &__slide {
+      min-height: 500px;
+      background-size: cover;
+      &__info {
+        padding-top: 310px;
+        &__title {
+          color: $c-white;
+          font-size: 28px;
+          padding-bottom: $l-padding;
+        }
+        &__subtitle {
+          color: $c-white;
+          font-size: 22px;
+          padding-bottom: $l-padding;
+        }
+        &__button {
+          @include button();
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .main {
+    padding: $l-padding*2 0;
+    &__content {
+      &__title {
+        font-size: 22px;
+        color: $c-main;
+        font-weight: 500;
+        font-family: $f-header;
+      }
+    }
+
+  }
 
 }

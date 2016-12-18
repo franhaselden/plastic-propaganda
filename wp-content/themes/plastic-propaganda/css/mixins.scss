@@ -1,0 +1,9 @@
+@import 'variables';
+
+@mixin button($background-colour:$c-main){
+  background-color: $background-colour;
+  color: $c-white;
+  padding: $l-padding/2 $l-padding*2;
+  display: inline-block;
+  cursor: pointer;
+}

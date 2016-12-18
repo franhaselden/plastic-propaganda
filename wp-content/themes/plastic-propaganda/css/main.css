@@ -1,3 +1,74 @@
-
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,500,800");
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,500,800");
+body .header {
+  width: 100%;
+  font-family: "Heebo", sans-serif;
+  font-weight: 800; }
+  body .header__logo {
+    font-size: 34px;
+    padding: 20px 0;
+    width: 25%;
+    display: inline-block; }
+    body .header__logo__title {
+      text-align: right; }
+      body .header__logo__title__dot {
+        color: purple; }
+    body .header__logo__subtitle {
+      color: purple;
+      text-align: right;
+      font-size: 26px; }
+  body .header__menu-trigger {
+    padding: 20px 0;
+    width: 74%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top; }
+    body .header__menu-trigger::before {
+      content: '\f0c9'; }
+body .subheader-bar {
+  background-color: #000;
+  color: #FFF;
+  font-size: 18px;
+  padding: 10px 0; }
+  body .subheader-bar__email {
+    color: #FFF; }
+  body .subheader-bar__email, body .subheader-bar__icon {
+    display: inline-block;
+    margin-right: 6px; }
+    body .subheader-bar__email:last-child, body .subheader-bar__icon:last-child {
+      margin-right: 0; }
+  body .subheader-bar__icon {
+    font-size: 30px; }
+  body .subheader-bar .wrapper {
+    text-align: right; }
+body .slider {
+  font-family: "Heebo", sans-serif; }
+  body .slider__slide {
+    min-height: 500px;
+    background-size: cover; }
+    body .slider__slide__info {
+      padding-top: 310px; }
+      body .slider__slide__info__title {
+        color: #FFF;
+        font-size: 28px;
+        padding-bottom: 20px; }
+      body .slider__slide__info__subtitle {
+        color: #FFF;
+        font-size: 22px;
+        padding-bottom: 20px; }
+      body .slider__slide__info__button {
+        background-color: purple;
+        color: #FFF;
+        padding: 10px 40px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 18px; }
+body .main {
+  padding: 40px 0; }
+  body .main__content__title {
+    font-size: 22px;
+    color: purple;
+    font-weight: 500;
+    font-family: "Heebo", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
